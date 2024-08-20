@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin: 50px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* color: white; */
+  padding: 15px 0;
+}
+header {
+  background-color: var(--purple300);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+/* .nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 20px 0;
+} */
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+nav ul {
+  display: flex;
+  gap: 35px;
+  /* color: white; */
+}
+nav ul a {
+  text-decoration: none;
+}
+nav ul li {
+  list-style: none;
+  color: white;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s ease-in;
+}
+nav ul li:hover {
+  border-bottom: 2px solid white;
+  transition: 0.2s ease-in;
+}
+.hero-section {
+  background-image: url(./images/hero_image.png);
+  height: 100vh;
+  color: white;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-size: cover;
+}
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hero-section h1 {
+  font-size: 96px;
+}
+.hero-section h3 {
+  font-size: 32px;
+}
+.hero-section p {
+  font-size: 23px;
+  font-weight: 400;
+}
+.music-section {
+  padding-top: 50px;
+  background: var(--purple500);
+}
+.music-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.music-section h2 {
+  font-size: 40px;
+}
+.music-section h3 {
+  font-size: 32px;
+}
+.music-section h4 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.ipad-iphone-img {
+  margin-top: -400px;
+  position: relative;
+  top: 400px;
+}
+
+.primary-btn {
+  background-color: var(--red600);
+  color: white;
+  font-weight: 400;
+  font-size: 17px;
+}
+.secondary-btn {
+  background-color: var(--purple300);
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+  /* font-weight: 400; */
+}
+button:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+}
+.music-section p {
+  font-weight: 500;
+}
+.about-music {
+  display: grid;
+  padding-top: 450px;
+  place-items: center;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.myhead {
+  font-weight: 600;
+  font-size: 35px;
+}
+.mypara {
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+}
+.video-section {
+  background-image: url(./images/video.png);
+  min-height: 800px;
+  /* margin-top: 300px; */
+  display: grid;
+  color: white;
+  place-items: center;
+  align-items: center;
+}
+.video-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: -200px;
+}
+.video-section h3 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.video-section p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.hero-section,
+.video-section {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gift-section {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+  gap: 20px;
+}
+.gift-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.gift-section h3 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.gift-section p {
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.footer-upper {
+  background-color: var(--purple600);
+  padding: 20px;
+}
+.footer-upper .container {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+.footer-upper h4 {
+  font-size: 22px;
+  /* padding-bottom: 5px; */
+  border-bottom: 2px solid white;
+  margin-bottom: 5px;
+}
+
+.footer-upper ul {
+  list-style: none;
+  font-weight: 400;
+}
+.footer-lower {
+  background-color: var(--purple300);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.footer-lower p {
+  font-weight: 500;
+  font-size: 15px;
+}
+.gift-section {
+  scroll-margin: 120px;
+}
